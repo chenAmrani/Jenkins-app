@@ -7,6 +7,7 @@ pipeline {
                 docker {
                     image 'node:18-alpine' //the workspace with Node18
                     reuseNode true //save the files to be availiable in the container
+                    ar
                 }
             }
             steps {
@@ -46,8 +47,8 @@ pipeline {
             }
             steps {
             sh '''
-                npm install -g serve
-                serve -s build
+                npm install serve
+                node_modules/.bin/serve -s build
                 npx playwirght test
             '''
             }
