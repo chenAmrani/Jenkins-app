@@ -7,7 +7,6 @@ pipeline {
                 docker {
                     image 'node:18-alpine' //the workspace with Node18
                     reuseNode true //save the files to be availiable in the container
-                    ar
                 }
             }
             steps {
