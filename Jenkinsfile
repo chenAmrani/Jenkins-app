@@ -23,7 +23,9 @@ pipeline {
 
         stage('Test') {
             steps {
-            sh 'eco"Test stage"'
+            sh '''
+                echo"Test stage"
+            '''
             }
         }    
     }
