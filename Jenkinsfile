@@ -42,7 +42,7 @@ pipeline {
             agent {
                 docker {
                     image 'mcr.microsoft.com/playwright:v1.49.1-noble' 
-                    reuseNode true //save the files to be availiable in the container
+                    reuseNode true 
                 }
             }
             steps {
