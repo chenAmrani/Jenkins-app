@@ -19,6 +19,10 @@ pipeline {
                     ls -la
                 '''
             }
+        }
+
+        stage('Test') {
+            sh 'eco"Test stage"'
         }    
     }
 }
