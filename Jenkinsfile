@@ -22,7 +22,9 @@ pipeline {
         }
 
         stage('Test') {
+            steps {
             sh 'eco"Test stage"'
+            }
         }    
     }
 }
