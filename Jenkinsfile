@@ -40,7 +40,8 @@ pipeline {
                                 always {
                                     junit 'jest-results/junit.xml'
                             }
-                        }   
+                        }
+                }   
 
                         stage('E2E') {
                             agent {
@@ -64,8 +65,6 @@ pipeline {
                             }
                         } 
             }
-        }
-
-        
+        } 
     }
 }
